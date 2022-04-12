@@ -1,9 +1,11 @@
 import './index.css';
-import Img from './freedom.jpg'
+import Img from './assets/freedom.jpg'
+import Img2 from "./assets/mujica.jpg"
+
 
 export function greeting(name, age) {
     const elemen = document.createElement('h1');
-    elemen.innerText = `hello, ${name}`;
+    elemen.innerText = `hello, ${name}!!!`;
     document.body.append(elemen);
     elemen.classList.add('great')
 
@@ -19,6 +21,11 @@ export function greeting(name, age) {
     const image = new Image();
     image.src = Img;
     document.body.appendChild(image);
+
+    //agregamos una nueva imageRendering
+    const image2 = new Image();
+    image2.src = Img2;
+    document.body.appendChild(image2);
 
 
 
